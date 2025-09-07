@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maltisse GmbH - Jobs</title>
+    <meta name="description" content="Kurze Beschreibung der Seite" />
+
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <link rel="icon" href="assets/img/logo.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img src="assets/img/logo.png" alt="Firmenlogo" class="logo" />
+    </header>
+
+    <main class="container" id="content" tabindex="-1">
+      <section class="intro" aria-labelledby="title">
+        <h1 id="title">Hast du Bock auf was Neues?</h1>
+        <h3>Du hast deinen alten Job satt und suchst frischen Wind?</h3>
+        <h3>
+          Dann komm zu uns – wir suchen dich als Verstärkung in Voll- oder
+          Teilzeit!
+        </h3>
+      </section>
+      <br />
+      <section>
+        <p><b>Was dich bei uns erwartet:</b></p>
+        <ul>
+          <li>
+            <b>Einblasdämmung</b> – keine Sorge, dafür bekommst du eine Schulung
+            von uns.
+          </li>
+          <li><b>Bodenbelagsarbeiten</b> – Abwechslung garantiert.</li>
+        </ul>
+
+        <br />
+        <p><b>Was du mitbringen solltest:</b></p>
+        <ul>
+          <li>
+            Höhenangst? Dann bist du bei uns leider falsch –
+            <b>Schwindelfreiheit ist Pflicht!</b>
+          </li>
+          <li>Gute <b>Deutschkenntnisse</b> – in Wort und Schrift.</li>
+          <li>Führerschein <b>Klasse B</b></li>
+          <li>
+            Eine <b>Ausbildung</b> als
+            <ul>
+              <li>Maler/Lackierer</li>
+              <li>Bau- und Metallmaler</li>
+              <li>Bau- und Objektbeschichter</li>
+              <li>Bodenleger</li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Quereinsteiger</b> mit handwerklichem Talent? Ebenfalls herzlich
+            willkommen!
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Warum wir?</h3>
+        <p>
+          Weil wir nicht nur Jobs, sondern Perspektiven bieten – mit guter
+          Stimmung, fairen Bedingungen und echter Wertschätzung.
+        </p>
+        <br />
+        <p>
+          <b>Klingt spannend?</b> Dann melde dich direkt über unser
+          Kontaktformular und lass uns kennenlernen!
+        </p>
+      </section>
+      <section class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Kontakt</h2>
+        <form
+          id="contactForm"
+          action="https://formspree.io/f/DEIN_ENDPOINT"
+          method="POST"
+          novalidate
+        >
+          <label for="name">Name*</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+          />
+
+          <label for="email">E‑Mail*</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          />
+
+          <label for="message">Nachricht*</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <!-- Zustimmungen steuern das Absenden -->
+          <label class="checkbox">
+            <input type="checkbox" id="chkTerms" required />
+            Ich akzeptiere die Bedingungen.*
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" id="chkPrivacy" required />
+            Ich habe die Datenschutzhinweise gelesen.*
+          </label>
+
+          <input
+            type="text"
+            name="_gotcha"
+            class="hp"
+            tabindex="-1"
+            autocomplete="off"
+          />
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="Neue Kontaktanfrage über die Website"
+          />
+          <input type="hidden" name="_replyto" value="{{email}}" />
+
+          <button type="submit" id="btnSubmit" disabled>Absenden</button>
+          <p id="status" class="status" aria-live="polite"></p>
+        </form>
+
+        <p class="legal-links">
+          <a href="/legal/impressum.html">Impressum</a> ·
+          <a href="/legal/privacy.html">Datenschutz</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small>© <span id="year"></span> Dein Firmenname</small>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
